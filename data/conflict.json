@@ -1,0 +1,33 @@
+{
+  "allowed_origins": [
+    "https://local-source-007.example.test"
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://local-source-007.example.test/records/road_notice-A",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-1.bin",
+        "status": 200,
+        "bytes": 147,
+        "sha256": "a784298b1d6d6e556252ab0d8214ab93bac467376f5bc7e1991f2b335bb6b17a"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://local-source-007.example.test/records/road_notice-A",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-conflict.bin",
+        "status": 200,
+        "bytes": 152,
+        "sha256": "a3593e7458a566b18f50d02ad2704d935349b683b8feae953ee105de317cef69"
+      }
+    }
+  ]
+}
