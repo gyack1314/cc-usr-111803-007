@@ -2,7 +2,7 @@
   "kind": "road_notice",
   "id": "road_notice-A",
   "revision": "v1",
-  "period": "2026-11-13",
-  "subject": "sample-A",
-  "state": "published"
+  "segment": "G-1",
+  "direction": "northbound",
+  "starts_at": "2026-11-13T06:00+08:00"
 }

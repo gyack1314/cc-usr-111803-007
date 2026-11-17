@@ -1,0 +1,24 @@
+{
+  "roles": [
+    "road_notice",
+    "farm_quote"
+  ],
+  "relation_field": "segment",
+  "required_fields": {
+    "road_notice": [
+      "segment",
+      "direction",
+      "starts_at"
+    ],
+    "farm_quote": [
+      "segment",
+      "farm_region",
+      "price_cny_kg"
+    ]
+  },
+  "source_identity": [
+    "kind",
+    "id",
+    "revision"
+  ]
+}

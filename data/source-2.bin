@@ -1,8 +1,8 @@
 {
   "kind": "farm_quote",
-  "id": "farm_quote-B",
+  "id": "farm_quote-A",
   "revision": "v1",
-  "period": "2026-11-13",
-  "subject": "sample-A",
-  "state": "pending"
+  "segment": "G-1",
+  "farm_region": "河北北部",
+  "price_cny_kg": 8.67
 }
