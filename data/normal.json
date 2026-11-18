@@ -29,5 +29,17 @@
         "sha256": "74ec66775ee13e39b47f9de24c378a4a236f999375db5a149b54fba82182e06e"
       }
     }
+  ],
+  "sources": [
+    {
+      "url": "https://local-source-007.example.test/records/road_notice-A",
+      "kind": "road_notice",
+      "required": true
+    },
+    {
+      "url": "https://local-source-007.example.test/records/farm_quote-B",
+      "kind": "farm_quote",
+      "required": true
+    }
   ]
 }

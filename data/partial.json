@@ -1,0 +1,32 @@
+{
+  "allowed_origins": [
+    "https://local-source-007.example.test"
+  ],
+  "sources": [
+    {
+      "url": "https://local-source-007.example.test/records/road_notice-A",
+      "kind": "road_notice",
+      "required": true
+    },
+    {
+      "url": "https://local-source-007.example.test/records/farm_quote-B",
+      "kind": "farm_quote",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://local-source-007.example.test/records/road_notice-A",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-1.bin",
+        "status": 200,
+        "bytes": 162,
+        "sha256": "2248c9cbc82c0a63e65060d69d08457adb01ca36cce3788c85d66a8226a5ccc3"
+      }
+    }
+  ]
+}
