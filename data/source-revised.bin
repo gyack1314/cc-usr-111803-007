@@ -1,0 +1,8 @@
+{
+  "kind": "road_notice",
+  "id": "road_notice-A",
+  "revision": "v2",
+  "segment": "G-1",
+  "direction": "southbound",
+  "starts_at": "2026-11-13T06:00+08:00"
+}
