@@ -55,6 +55,25 @@ def progress(connection, collection):
                 'SELECT source_url,body_sha256,received_at FROM collection_progress WHERE collection=? ORDER BY source_url',
                 (collection,))]
 
+def expected_revisions(connection, collection):
+    """各收据对应来源链接在目录中声明的要求版次。"""
+    initialize(connection)
+    return {row[0]: row[1] for row in connection.execute(
+        'SELECT r.body_sha256,s.expected_revision FROM receipts r '
+        'JOIN collection_sources s ON s.collection=r.collection AND s.source_url=r.source_url '
+        'WHERE r.collection=?', (collection,))}
+
+def pending_required(connection, collection):
+    """目录要求但正文尚未取得的来源；取得前相应业务判断保持待核。"""
+    initialize(connection)
+    return [dict(url=row[0], kind=row[1], expected_revision=row[2])
+            for row in connection.execute(
+                'SELECT s.source_url,s.source_kind,s.expected_revision FROM collection_sources s '
+                'WHERE s.collection=? AND s.required AND NOT EXISTS('
+                'SELECT 1 FROM collection_progress p '
+                'WHERE p.collection=s.collection AND p.source_url=s.source_url) '
+                'ORDER BY s.source_url', (collection,))]
+
 def coverage(connection, collection):
     """区分来源接收进度与已核实的业务资料范围。"""
     initialize(connection)
