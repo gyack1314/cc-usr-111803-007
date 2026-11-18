@@ -1,0 +1,37 @@
+{
+  "allowed_origins": [
+    "https://local-source-007.example.test"
+  ],
+  "sources": [
+    {
+      "url": "https://local-source-007.example.test/records/road_notice-A",
+      "kind": "road_notice",
+      "required": true
+    },
+    {
+      "url": "https://local-source-007.example.test/records/farm_quote-B",
+      "kind": "farm_quote",
+      "required": true
+    },
+    {
+      "url": "https://local-source-007.example.test/records/road_release-A",
+      "kind": "road_release",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://local-source-007.example.test/records/road_release-A",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-event.bin",
+        "status": 200,
+        "bytes": 191,
+        "sha256": "0c63e63fbab424c6cae21e8b7730cefea5b5b0394d553b5d083b9e6eb41b223a"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "road_release",
+  "id": "road_release-A",
+  "revision": "v1",
+  "segment": "G-1",
+  "direction": "northbound",
+  "released_at": "2026-11-13T14:00+08:00",
+  "notice_no": "ROAD-2"
+}

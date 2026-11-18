@@ -1,7 +1,8 @@
 {
   "roles": [
     "road_notice",
-    "farm_quote"
+    "farm_quote",
+    "road_release"
   ],
   "relation_field": "segment",
   "required_fields": {
@@ -14,6 +15,12 @@
       "segment",
       "farm_region",
       "price_cny_kg"
+    ],
+    "road_release": [
+      "segment",
+      "direction",
+      "released_at",
+      "notice_no"
     ]
   },
   "source_identity": [
