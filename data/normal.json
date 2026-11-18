@@ -34,12 +34,14 @@
     {
       "url": "https://local-source-007.example.test/records/road_notice-A",
       "kind": "road_notice",
-      "required": true
+      "required": true,
+      "expected_revision": "v1"
     },
     {
       "url": "https://local-source-007.example.test/records/farm_quote-B",
       "kind": "farm_quote",
-      "required": true
+      "required": true,
+      "expected_revision": "v1"
     }
   ]
 }
